@@ -1,0 +1,145 @@
+import React, { useState } from 'react'
+import "../Home/Home.css"
+import { input, List,ListItem } from '@mui/material';
+export default function Filter() {
+    const [tog,setTog]=useState(false);
+
+const toggle =()=>{
+setTog(!tog);
+}
+
+
+const [selectedOptions, setSelectedOptions] = useState([]);
+const [catList,setCatList]=useState(false);
+const [priceList,setPriceList] =useState(false);
+const [brandList,setBrandList] =useState(false)
+const handleOptionChange = (event) => {
+  const selected = Array.from(event.target.selectedOptions).map((option) => option.value);
+  setSelectedOptions(selected);
+}
+
+
+const [checkedCheckboxes, setCheckedCheckboxes] = useState([]);
+
+const handleCheckboxChange = (event) => {
+  const checkboxId = event.target.id;
+  if (event.target.checked) {
+    // If the checkbox is checked, add its label to the array
+    setCheckedCheckboxes((prevCheckedCheckboxes) => [
+      ...prevCheckedCheckboxes,
+      checkboxId,
+    ]);
+  } else {
+    // If the checkbox is unchecked, remove its label from the array
+    setCheckedCheckboxes((prevCheckedCheckboxes) =>
+      prevCheckedCheckboxes.filter((label) => label !== checkboxId)
+    );
+  }
+};
+
+
+
+const [selectedPrice, setSelectedPrice] = useState(0);
+
+const handlePriceChange = (event) => {
+  setSelectedPrice(event.target.value);
+};
+
+console.log(checkedCheckboxes)
+  return (
+    <div className='filterCoin '>
+        <div  className={tog?("filter"):("filterBox")}>
+
+       
+      {
+        tog?(
+      <div className='d-flex'>
+        <div className='filters d-flex'>
+         <div className='categoryFilter'>
+         <div> 
+         <h1>Category      <button className='cat-button' onClick={()=>setCatList(!catList)}>v</button> </h1>
+
+         </div>
+         </div>
+     {
+        catList?(
+      
+      
+    <List style={{display:'block',direction:'column',position:"absolute",marginTop:"3rem",background:"white",zIndex:'3',color:'black' }}>
+       
+          
+          <ListItem className='d-flex flex-column' >
+         <label  htmlFor='smartphones'>smartphones</label><input   onChange={handleCheckboxChange} type='checkbox' id='smartphones'/>
+         <label htmlFor='laptop'>laptops</label><input   onChange={handleCheckboxChange} type='checkbox' id='laptop' />
+         <label htmlFor='fragrances'>fragrances</label><input   onChange={handleCheckboxChange} type='checkbox' id='fragrances'/>
+         <label htmlFor='skincare'>skincare</label><input   onChange={handleCheckboxChange} type='checkbox' id='skincare'/>
+         <label htmlFor='groceries'>groceries</label><input   onChange={handleCheckboxChange} type='checkbox' id='groceries'/>
+         <label htmlFor='home-decoration'>home-decoration</label><input   onChange={handleCheckboxChange} type='checkbox' id='home-decoration'/>
+
+          </ListItem>
+       
+      </List>
+        ):null
+        }
+
+
+          </div>
+
+<div className='price-filter'> 
+<div> <h1>Price range <button onClick={()=>{setPriceList(!priceList);setCatList(false)}} className='cat-button'>v</button> </h1>
+</div>
+{priceList?(
+  <div className='rangeBox'>
+      <label className='range-label' htmlFor="priceRange">Price Range:</label>
+      <input
+      className='range-input'
+        type="range"
+        id="priceRange"
+        min="0"
+        max="200000"
+        step="1"
+        value={selectedPrice}
+        onChange={handlePriceChange}
+      />
+      <span id="selectedPrice">{selectedPrice}</span>
+    </div>
+
+):null
+
+}
+</div>
+
+
+<div className='brand-filter'>
+<div> <h1>Brand <button onClick={()=>{setPriceList(!priceList);setCatList(false)}} className='cat-button'>v</button> </h1>
+{}
+
+</div>
+
+
+<div>
+<button className='float-right'> apply</button>
+</div>
+
+
+
+
+
+
+
+        </div>
+      </div>
+      
+
+        ):(   <div onClick={toggle} className='filterBox'  >
+     
+     <svg className="icon"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
+<path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z"/>
+</svg>
+</div>)
+        }
+     
+        </div>
+    </div>
+  )
+}

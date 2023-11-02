@@ -1,0 +1,515 @@
+.HomePage{
+    background-color: aliceblue;
+    height: 100%;
+    width: 100vw;
+ background-image: url("../../Images/back.jpg");
+ filter: brightness(0.7); 
+    background-size: cover;
+}
+
+.Box5{
+   background-image: url("https://th.bing.com/th/id/OIP.649MFsje3cwwfEacYMoBVwHaEK?pid=ImgDet&rs=1"); 
+   height: 30vh ;
+   border-radius: 3rem;
+   margin-left: 5rem;
+   box-shadow: .3rem .4rem .5rem .2rem rgb(147, 144, 144);
+}
+.Box1{
+    background-image: url("https://th.bing.com/th/id/OIP.PPS1fRcueex3Fu3rmegTiAHaE8?pid=ImgDet&rs=1"); 
+    height: 30vh ;
+    border-radius: 3rem;
+    margin-left: 5rem;
+    box-shadow: .3rem .4rem .5rem .2rem rgb(147, 144, 144);
+
+    
+ }
+
+.Box4{
+    background-image: url("https://images.creativemarket.com/0.1.0/ps/4021747/1820/2730/m1/fpnw/wm1/fqmuzs5vvxgdizkhawgbojz2ipwe9btkgvhidwo0c7bq8u5lodjlimspgtt8ebu0-.jpg?1518944820&s=d51ceb09e03938c19381cd45cc0d2dad"); 
+    height: 30vh ;
+    border-radius: 3rem;
+    margin-left: 5rem;
+    background-size: cover;
+    box-shadow: .3rem .4rem .5rem .2rem rgb(147, 144, 144);
+
+
+}
+
+.Box3{
+background-image: url("https://th.bing.com/th/id/OIP.BGwhDC-5eqhHHqZkDPDMygHaE7?pid=ImgDet&rs=1");
+height: 30vh ;
+border-radius: 3rem;
+margin-left: 5rem;
+background-size: cover;
+box-shadow: .3rem .4rem .5rem .2rem rgb(147, 144, 144);
+
+}
+
+.Box6{
+    background-image: url("https://i.pinimg.com/originals/e7/80/35/e7803500533abdb3e16c4bfd8269d105.jpg");
+    height: 30vh ;
+border-radius: 3rem;
+margin-left: 5rem;
+background-size: cover;
+box-shadow: .3rem .4rem .5rem .2rem rgb(147, 144, 144);
+
+}
+.head{
+    height: 5rem;
+   padding: 1rem 1rem;
+    width: 96vw;
+    border-radius: 2rem;
+}
+
+.bbt{
+    float: right;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(252, 251, 249);
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.headerCoin{
+    background-color: rgb(185, 229, 203);
+}
+
+.line ul{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-top: 10rem;
+}
+.midBox{
+   height: 30vh ;
+   border-radius: 3rem;
+   margin-left: 5rem;
+   background-color: aquamarine;
+
+}
+
+.midBox > h1{
+    color: white;
+    font-weight: 700;
+    
+    text-align: center;
+    margin-top: 5rem;
+}
+.link{
+    color: white;
+    margin-top: 4rem;
+    
+}
+
+
+
+  /* background-image: url("https://yt3.ggpht.com/a/AGF-l7-SYVf5vt79xvJQbzhSQyuOZg07DsVy_0uAqw=s900-mo-c-c0xffffffff-rj-k-no"); */
+
+.logo{
+   display: flex;
+  background-size: 14rem;
+background-size: contain;
+background-repeat: no-repeat;
+
+margin-top: 0rem;
+
+
+}
+
+.logo h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: red;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: end;
+    margin-top: 1rem;
+}
+.img{
+    margin-left: 2rem;
+}
+
+.slideBox{
+
+   width: 98vw;
+   border-radius: 1rem;
+   box-shadow: .2rem .2rem .2rem .2rem rgb(213, 210, 210);
+    margin-left: .2rem;
+    margin-top: 1rem;
+    height: 11rem;
+    background-color: transparent;
+
+}
+.slideCoin{
+    margin-top: 2rem;
+}
+.product-img{
+  
+    border-radius: 1rem;
+}
+
+.p-image{
+    
+    height: 9rem;
+    width: 22vw;
+
+}
+
+.disco{
+    text-overflow:ellipsis;
+}
+
+.button{
+    height: 3rem;
+    width: 8rem;
+    background-color: rgb(230, 57, 57);
+    border-radius: 1rem;
+    
+}
+
+.product-text h1{
+    font-size: 2rem;
+    font-weight: 700;
+    height: 5%;
+    margin-left: 1rem;
+    text-align: start;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}.product-text h3{
+    font-size: .8rem;
+    margin-left: 1rem;
+    color: blue;
+}
+
+.product-text h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    color: brown;
+}
+
+.title{
+    height:2rem;
+}
+
+
+.active-page {
+    font-weight: bold; 
+    color: white;
+  }
+.price{
+    height:4rem;
+    margin-bottom: .5rem;
+    text-align:justify;
+
+}
+
+.dis{
+    height:5rem;
+}
+.product-cart{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.product-text p{
+    text-overflow: hidden;
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: 400;
+    color: rgb(64, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+
+}
+.pagination{
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    position:sticky;
+
+}
+
+
+.page{
+    margin-left :2rem;
+  
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(88, 88, 158);
+}
+
+
+
+
+.filterBox{
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    z-index: 7;
+    height: 2rem;
+    background-color: rgb(51, 78, 233);
+    border-radius: 40%;
+float: right;
+    width: 2rem;
+}
+
+
+
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+ padding-top: 1rem;
+    margin-top: 1rem;
+  width: 100vw;
+    height: 4rem;
+    background-color: rgb(69, 69, 164);
+    border-radius: 2rem;
+  
+    
+
+}
+
+.closeButton{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+.icon{
+    float: right;
+    text-align: center;
+ 
+   
+}
+.filterText{
+    font-size: 1rem;
+    color: rgb(59, 48, 48);
+    font-weight: 700;
+}
+
+
+
+
+
+
+.but{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 45%;
+    border: transparent;
+    box-shadow: .4rem .3rem .4rem gray ;
+    color: rgb(106, 128, 228);
+    background-color: rgb(219, 219, 230);
+}
+
+.rangeBox{
+    height: 2rem;
+border-radius: 2rem;
+padding-left: 1rem;
+color: white;
+font-size: 1rem;
+font-weight: 600;
+    background-color: rgb(180, 103, 103);
+    box-shadow: .3rem .2rem 3rem gray;
+
+}
+
+
+.filterCoin h1{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+  text-align: center;
+  margin-left: 2rem;
+  
+}
+
+
+.applyButton{
+    width: 5rem;
+    margin-left: 4rem;
+    border-radius: .5rem;
+
+    background-color: rgb(183, 72, 72);
+    color: white;
+    font-weight: 600;
+}
+
+
+
+
+
+
+/* Define a base font size for normal screens */
+html {
+    font-size: 16px; /* Adjust the size to your preference */
+  }
+  
+  /* Media query for smaller screens (e.g., screens with a width less than 768px) */
+  @media (max-width: 769px) {
+    html {
+      font-size: 14px; /* Adjust the size to make the font smaller on smaller screens */
+    }
+
+    .filterCoin h1{
+        margin-left: 2rem;
+        float: left;
+        font-size: 14px;
+    }
+    .but{
+        background-color: rgb(253, 245, 245);
+        margin-left: 1rem;
+    }
+  }
+  
+  /* Media query for even smaller screens (e.g., screens with a width less than 480px) */
+  @media (max-width: 480px) {
+    html {
+      font-size: 10px; /* Further reduce the font size for even smaller screens */
+    }
+.catBox{
+    width: 60vw;
+
+}
+
+    .filter{
+        flex-direction: column;
+        height: 80vh;
+        background-color: black;
+        width: 40vw;
+        z-index: 11;
+    }
+
+    .filterCoin h1{
+        margin-left: 0;
+        float: left;
+        font-size: 10px;
+        margin-top: 2rem;
+       
+    }
+
+ .price{
+    display: flex;
+    margin-top: 2rem;
+ }
+
+ .title h1{
+    font-size: 14px;
+ }
+
+ .rangeBox{
+    height: auto;
+ }
+
+ .applyButton{
+    margin-left: 0;
+    margin-top: 2rem;
+ }
+ .cateFilter{
+    margin-right: 10rem;
+ }
+  }
+  
+
+
+
+.Box{
+    background-color: rgb(207, 250, 223);
+}
+
+
+
+
+  .Box h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+   background-color: antiquewhite;
+    color: #000;
+    height: 4rem;
+    text-align: start;
+    padding-top: 1rem;
+  }
+
+  .Box button{
+    margin-top: 1rem;
+    width: 4rem;
+    background-color: red;
+    width: auto;
+    border-radius: 1rem;
+    border: transparent;
+  }
+
+  .Box h1:hover{
+    background-color: rgb(192, 132, 132);
+  }
+
+  .catBox{
+    display: grid;
+    color: rgb(7, 7, 6);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .catBox input{
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+    width: 1rem;
+  }
+
+
+  .newBox{
+    background-color: red;
+    float: right;
+    z-index: 7;
+  }
+.brand{
+    background-color: rgb(247, 192, 192);
+    
+
+}
+.brand label {
+    margin-top: .5rem;
+    font-weight: 700;
+ padding-top: 2rem;
+}
+
+.brandBox input{
+    margin: .3rem;
+}
+
+
+  .brandBox label{
+    font-size: 1rem;
+    color: rgb(8, 7, 7);
+    margin-top: 1rem;
+   
+  }
+
+
+  .filterButton{
+   
+    width: 3rem;
+    height: 3rem;
+    margin-left: 2rem;
+   border-radius: 40%;
+    background-color: rgb(241, 71, 71);
+  }
+
+
+
+
+  
