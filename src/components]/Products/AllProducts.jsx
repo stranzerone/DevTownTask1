@@ -6,7 +6,7 @@ import Filter2 from './Filter2';
 export default function AllProducts() {
 const [Products,setProducts] =useState([])
 const [childVlaue,setChildValue]=useState([]);
-const [priceRange,setPriceRange] =useState([]);
+const [priceRange,setPriceRange] =useState();
 const [filteredProduct,setFilterdProducts]=useState([]);
 const [cate,setCate] =useState([]);
 const [currentPage, setCurrentPage] = useState(1);
@@ -29,26 +29,30 @@ useEffect(() => {
       const catAndPrice = cateFiltred.filter(product=> product.price <priceRange/100)
       // Set filteredProducts
       setFilterdProducts(finalProducts);
-     
+   
       // Check if any filters are applied
-      if (cate.length > 0 && childVlaue.length > 0 && priceRange.length>0) {
+      if (cate.length > 0 && childVlaue.length > 0 && priceRange > 0) {
         setProducts(rangeFinalProduct);
         setTotalItems(filteredProduct.length)
         console.log(rangeFinalProduct)
       }else if(cate.length===0 && childVlaue.length>0){
 setProducts(catAndPrice)
-      }else if(cate.length > 0 &&  priceRange.length>0){
-
+console.log("childValue")
+      }else if(cate.length > 0 &&  priceRange > 0){
+setProducts(rangeFinalProduct);
+console.lof("cate price ",rangeFinalProduct)
 
       }
       
       else if(cate.length>0 && childVlaue.length===0){
         setProducts(cateFiltred.slice(startIndex, endIndex))
         setTotalItems(cateFiltred.length)
+        console.log("cate")
 
      
-      }else if(cate.length===0 && childVlaue.length>0){
-      setProducts(filteredProduct.slice(startIndex, endIndex))
+      }else if(cate.length>0 && childVlaue.length>0){
+        console.log("final");
+      setProducts(finalProducts.slice(startIndex, endIndex))
       setTotalItems(filteredProduct.length)
 
 
@@ -70,7 +74,7 @@ setProducts(catAndPrice)
   }
 
   fetchProducts();
-}, [cate, childVlaue,startIndex,endIndex,filteredProduct,priceRange]);
+}, [cate, childVlaue,startIndex,endIndex]);
 
 
 const totalPages = Math.ceil(totalItems / itemsPerPage);
